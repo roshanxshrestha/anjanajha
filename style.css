@@ -6,7 +6,18 @@
 
 /*  ---------------------variables-------------------------------*/
 :root {
+   --main-color: #4F49FF;
+  --dark: #15202a;
+  --dark-light: #1d2a35;
+  --white: #ffffff;
+  --white-light: #c8c8c8;
+  --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  --cursive-font: "Dancing Script", cursive;
+  scroll-behavior: smooth;
 
+
+}
+.dark-theme {
 
    --main-color: #4F49FF;
   --white: #15202a;
@@ -17,19 +28,10 @@
   --cursive-font: "Dancing Script", cursive;
   scroll-behavior: smooth;
 }
-.dark-theme {
-   --main-color: #4F49FF;
-  --dark: #15202a;
-  --dark-light: #1d2a35;
-  --white: #ffffff;
-  --white-light: #c8c8c8;
-  --shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  --cursive-font: "Dancing Script", cursive;
-  scroll-behavior: smooth;
-}
 .dark-theme .home{
   
-  background: url(./assets/images/person.png ) no-repeat right  bottom var(--dark-light) ;
+  background: url(./assets/images/anjanajha.png ) no-repeat right  bottom var(--dark)  ;
+  background-size: contain;
   
 }
 
@@ -345,7 +347,8 @@ nav ul {
   animation: zoomInOut 20s ease infinite;
 }
 .home{
-  background: url("./assets/images/person.png") no-repeat right  bottom  var(--dark);
+  background: url("./assets/images/anjanajha.png") no-repeat right  bottom  var(--dark);
+  background-size: contain;
 
 }
 .home .max-width {
@@ -796,10 +799,10 @@ nav ul {
     font-size: 25px;
   }
   .home .home-content .text-2 {
-    font-size: 70px;
+    font-size:28px;
   }
   .home .home-content .text-3 {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .about .about-content .column {
@@ -844,16 +847,29 @@ nav ul {
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 800px ) {
+  .home-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100vh;
+  }
+  .home .home-content .text-2 {
+    margin-top: 50px;
+    font-size: 28px;
+  }
+  .home .home-content .text-3 {
+    font-size: 25px;
+    margin-top: 10px;
+
+  }
+}
 @media (max-width: 690px) {
   .max-width {
     overflow: hidden;
     padding: 0 23px;
-  }
-  .home .home-content .text-2 {
-    font-size: 55px;
-  }
-  .home .home-content .text-3 {
-    font-size: 32px;
   }
 
   .about .about-content .right .text {
@@ -887,12 +903,7 @@ nav ul {
     overflow: hidden;
     padding: 0 23px;
   }
-  .home .home-content .text-2 {
-    font-size: 28px;
-  }
-  .home .home-content .text-3 {
-    font-size: 25px;
-  }
+  
   .about .about-content .right .text,
   .skills .skills-content .left .text {
     font-size: 19px;
