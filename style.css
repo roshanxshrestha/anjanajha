@@ -30,9 +30,8 @@
 }
 .dark-theme .home{
   
-  background: url(./assets/images/anjanajha.png ) no-repeat right  bottom var(--dark)  ;
+  background: url(./assets/images/aj.png ) no-repeat right  bottom var(--dark)  ;
   background-size: contain;
-  
 }
 
 /* global setting --------------------------------------------------------*/
@@ -337,21 +336,20 @@ nav ul {
 .home {
   overflow: hidden;
   display: flex;
-  
+
   height: 100vh;
   color: whitesmoke;
   min-height: 500px;
   /* font-family: "Ubuntu", sans-serif; */
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: var(--dark);
-  animation: zoomInOut 20s ease infinite;
-}
-.home{
-  background: url("./assets/images/anjanajha.png") no-repeat right  bottom  var(--dark);
+  background: url("./assets/images/aj.png") no-repeat right   bottom  var(--dark);
   background-size: contain;
+
 
 }
 .home .max-width {
+
   margin: auto 0 auto 40px;
 }
 
@@ -377,6 +375,11 @@ nav ul {
   color: var(--white-light);
   font-weight: 500;
   font-family: var(--cursive-font);
+}
+.dark-theme .home{
+  
+  background: url(./assets/images/aj.png ) no-repeat right  bottom var(--dark)  ;
+  background-size: contain;
 }
 
 
