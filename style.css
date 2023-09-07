@@ -906,6 +906,16 @@ nav ul {
     overflow: hidden;
     padding: 0 23px;
   }
+  .dark-theme .home{
+  
+  background: url(./assets/images/anjanajha.png ) no-repeat right  bottom var(--dark)  ;
+  background-size: contain;
+}
+ .home{
+  
+  background: url(./assets/images/anjanajha.png ) no-repeat right  bottom var(--dark)  ;
+  background-size: contain;
+}
   
   .about .about-content .right .text,
   .skills .skills-content .left .text {
